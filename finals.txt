@@ -1,0 +1,23 @@
+mkdir git_practical_exam
+cd git_practical_exam
+git init
+git remote add origin https://github.com/kalea24/git_practical_exam.git
+git remote -v
+echo "Name: Cadhla Zaira Kalea Cruz >> student_info.txt
+echo "Date: 12/07/2024" >> student_info.txt
+echo "Name: Cadhla Zaira Kalea Cruz" >> student_info.txt
+git commit -m "practical exam"
+git commit -m "Added student_info.txt"
+echo "Favorite Git Command: git push" >> stusent_info.txt
+echo "Favorite Git Command: git push" >> student_info.txt
+git add .
+git commit -m "Updated student_info.txt with favorite Git command"
+git branch feature-bio
+git checkout feature-bio
+echo "About Me: I am learning Git for version control." > bio.txt
+git add bio.txt
+git commit -m "Added bio.txt in feature-bio branch"
+git checkout main
+git merge feature-bio
+git pull origin main
+doskey /history > finals.txt
